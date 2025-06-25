@@ -4,11 +4,11 @@ Stock Price Forecasting using Time Series Regression
 
 This project builds and evaluates models to predict stock closing prices based on historical stock price data and company metadata. The models are trained on a cleaned and merged dataset from the S&P 500 stocks.
 
-📊 Objective
+Objective
 
 To predict the next day's closing stock price using lag features and rolling averages derived from historical data.
 
-📁 Dataset
+Dataset
 
 sp500_companies.csv: Company metadata including sector, industry, market cap, etc.
 
@@ -16,7 +16,7 @@ historical_prices.csv: Daily stock prices including Open, Close, High, Low, Volu
 
 Source: Kaggle - S&P 500 Stocks
 
-🧱 Features Used
+Features Used
 
 Close_lag1: Previous day's closing price
 
@@ -24,7 +24,7 @@ Close_lag7: Closing price from 7 days ago
 
 Close_roll3: 3-day rolling average of closing prices
 
-🧰 Models Compared
+Models Compared
 
 Linear Regression
 
@@ -34,7 +34,7 @@ XGBoost Regressor
 
 Note: Hyperparameter tuning (e.g., GridSearchCV) is commented out to preserve memory. Plain versions of each model were used instead.
 
-🔢 Results
+Results
 
 Model
 
@@ -60,7 +60,7 @@ XGBoost
 
 Linear Regression performed best due to the strong linear relationships in the time-series features.
 
-🪑 Business Application
+Business Application
 
 Companies can use this model to:
 
@@ -70,7 +70,7 @@ Drive risk models and stop-loss triggers
 
 Support internal trading signals or research
 
-✅ Forecasting Example
+Forecasting Example
 
 To make a future prediction:
 
@@ -88,12 +88,12 @@ Input them into the trained model:
 
 model.predict([[close_lag1, close_lag7, close_roll3]])
 
-📚 Author
+Author
 
 Priya VermaBoston University
 M.S. in Data Science
 
-🔧 Tools Used
+Tools Used
 
 Python
 
